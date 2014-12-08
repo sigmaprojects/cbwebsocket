@@ -15,7 +15,8 @@ If there are any issues make sure to check your logs.
 1. Install WebSocket extension
 2. Creating an Application Mapping in Railo Administrator to point to this module directory
 3. Create a WebSocket Gateway, and in the listener field point it {mapping}.remote.WebSocketListener
-4. Make sure your ColdBox application is running first, then start the gateway.
-5. Open 1 browser tab to http://localhost/index.cfm?event=websocket:demo.index 
-6. Open 2nd browser tab to http://localhost/index.cfm?event=websocket:demo.ServerToClient
-7. If everything went smoothly, the demo will run.  Send a message using ServerToClient and see the result on the other tab.
+4. Edit the ModuleConfig.cfc settings for GatewayID and WSUrl
+5. Make sure your ColdBox application is running first, then start the gateway.
+6. Open 1 browser tab to http://localhost/index.cfm?event=websocket:demo.index 
+7. Open 2nd browser tab to http://localhost/index.cfm?event=websocket:demo.ServerToClient
+8. If everything went smoothly, the demo will run.  Send a message using ServerToClient and see the result on the other tab.
